@@ -2,9 +2,10 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
+var jasmine = require('gulp-jasmine');
 
 gulp.task('default', function() {
-  gulp.start('javascript', 'sass');
+  gulp.start('javascript', 'sass', 'test');
 });
 
 gulp.task('javascript', function() {
@@ -30,7 +31,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./public/stylesheets'));
 });
 
+gulp.task('test', function() {
+  gulp.src('./spec/**/*.js')
+    .pipe(jasmine());
+});
+
 gulp.task('watch', function() {
   gulp.watch('./src/assets/stylesheets/*.scss', ['sass']);
   gulp.watch('./src/assets/javascripts/*.js', ['javascript']);
+  gulp.watch('./spec/**/*.js', ['test']);
 });
