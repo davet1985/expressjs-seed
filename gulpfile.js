@@ -5,7 +5,7 @@ var watch = require('gulp-watch');
 var jasmine = require('gulp-jasmine');
 
 gulp.task('default', function() {
-  gulp.start('javascript', 'sass', 'test');
+  gulp.start('javascript', 'sass');
 });
 
 gulp.task('javascript', function() {
