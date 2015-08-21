@@ -1,6 +1,12 @@
 # ExpressJS seed
 
-[![Build Status](https://travis-ci.org/davet1985/expressjs-seed.svg?branch=master)](https://travis-ci.org/davet1985/expressjs-seed)
+[![Build Status](https://travis-ci.org/davet1985/expressjs-seed.svg?branch=openshift)](https://travis-ci.org/davet1985/expressjs-seed)
+
+## Deployment
+
+This branch is build using Travis and deploy to openshift.
+
+[http://expressjsseed-davet1985.rhcloud.com/](http://expressjsseed-davet1985.rhcloud.com/)
 
 ## Development
 
