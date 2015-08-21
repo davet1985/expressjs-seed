@@ -1,3 +1,12 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
+deploy:
+  provider: heroku
+  api_key:
+    secure: lzN136/DUxO71e3waGycN94/6YasD0PVV8Io5xjcMN0lC3A2BuRMTEuMzO3zcXn/etWFpHyyF98eyYzfAyeTV/nk25PfXeXTKqHIKCFbzZp8ZE2mLiKdjSO7EV5PUM/9zX9/ODKqyRdvKgDXqLT0VM+EcbqCtIQgvU6SuQkJEs+JqXUj5MqB5zKB27g2YQtbRv0VXFj5G1t8k/5/xDjEjgI4i6LLmn/DWeaZvXyuXw3RAeV617Q2FTaorvofViBWwBcYv70jVQuqzHyoDqXp5Tyt/fvViqumbtomHJdUb0Gj4EuIbPF4MwUXHlm6O+Dvz3wwdf13qssR04sfQa3rNdI8kOdaWN4qVYPKXmoN8G2XaWsC5u4HYS10KLTXvvuFTx/TlmG1MYHtvFgGtT1Uz6Dcm8DY/qteaMmPK1RfCn9dT39fpqlX5RIlu8JAtVozGhGGntI0OGl1x9jdXJLmjW1lp7DIVhkyoFVea3NvV9HDNgiEx3EERcPxzvkjKLUdtU3GilMeiNpijXQYfLr6/UkSw4cbdwx4YGRSDTD3EyEumYrroQJqGHtskkkt9ZohKoaRwMu3V0ul049J1sESleQn8UOq5lBWIs2lvgQcXUz+IHWjU5PUGCrxyz2OttLzK3VbgnjMAuGXJFKxDnHFCyO+/qeGSMuWRF2x/+xx5ME=
+  app: expressjs-seed
+  on:
+    repo: davet1985/expressjs-seed
+    branch: heroku
+  skip_cleanup: true

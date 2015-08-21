@@ -1,6 +1,10 @@
 # ExpressJS seed
 
-[![Build Status](https://travis-ci.org/davet1985/expressjs-seed.svg?branch=master)](https://travis-ci.org/davet1985/expressjs-seed)
+[![Build Status](https://travis-ci.org/davet1985/expressjs-seed.svg?branch=heroku)](https://travis-ci.org/davet1985/expressjs-seed)
+
+## Deployment
+
+This branch is build using Travis and deploys to heroku.
 
 ## Development
 
