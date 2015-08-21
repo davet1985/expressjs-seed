@@ -6,6 +6,8 @@
 
 This branch is build using Travis and deploys to heroku.
 
+http://expressjs-seed.herokuapp.com/
+
 ## Development
 
 ### Local

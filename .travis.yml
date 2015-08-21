@@ -9,3 +9,4 @@ deploy:
   on:
     repo: davet1985/expressjs-seed
     branch: heroku
+  skip_cleanup: true
