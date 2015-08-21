@@ -1,3 +1,12 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
+deploy:
+  provider: openshift
+  user: davethompson21@gmail.com
+  password:
+    secure: v0hpTBwooPB/uyidKjFiwPTy7X5dv+SuODTQHOyE1Rq4VI3sPRqNXMU9Py3Av//Wbjw5hM1w/n199nWnvpSojIBEFCcv72RnZ/MRdkbpHAYinhcYEO3m/vp0Qd93wgDLaYP5VYCpgjHj1M16SP8PlJTeJFJazpRMrCF59Z7QbD5eX7fnctbU8jjYMlEpiQO67DZj7YcNq4ud23ShYq4pJf7bOwIF5liqNSc3cM0RZUWzxgPaPDeo3nD4hn9KXIGVr2HMpUvJOFuL6+nBkr5xA7wL2H8HMlB6+isaAE7r5TmwaVG8XD7/lQXse7JBal1r7wAXBeu5MyZzWjpi4UAskVi0PIaGJ6yHtUV54ZmMexlyPiXt1H9od+XRwcooaU74ozTwq9RJHGlsjgRz6usp62Kciedo/l3Segt0wgrECU8DAFhO/SREcrT9pS2lG9Ff2i2aDYjG2ZXuzQ3QydZLZkQZILdavrkJKI9/aAUOe5wDNoYjPCEO7eEThLTp6C+jI3WUc5IGw1s4GAfN0VuLG8VUCmOQpd7w/+fSmaRFsXILN+oCan3RkQGKdbveQQqdBxLyGJMRi/ZCmDLEp2v7h8MreekUndf76tT9Drrmula2IcoIrpPmZgpEt2okCykjmQ61Cs97hRuN2xBt8ymx4BDfQDA0yoAB+H8q4cCSz4g=
+  app: expressjs-seed
+  domain: davet1985
+  on:
+    repo: davet1985/expressjs-seed

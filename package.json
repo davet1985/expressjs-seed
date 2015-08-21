@@ -1,15 +1,15 @@
 {
-  "name": "express-seed",
+  "name": "expressjs-seed",
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "postinstall": "bower install && gulp",
+    "postinstall": "HOME=$OPENSHIFT_DATA_DIR bower install && HOME=$OPENSHIFT_DATA_DIR gulp",
     "prestart": "npm install",
     "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davet1985/express-seed"
+    "url": "https://github.com/davet1985/expressjs-seed"
   },
   "engines": {
     "node": ">= 0.6.0",
